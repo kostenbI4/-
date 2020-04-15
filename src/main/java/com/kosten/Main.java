@@ -7,7 +7,7 @@ import java.awt.event.ComponentEvent;
 
 public class Main  {
     JFrame frame;
-    TableModel model = new TableModel();
+
 
     static String st[] = new String[4];
     Main() {
@@ -17,7 +17,7 @@ public class Main  {
         frame.setLocationRelativeTo(null);
         frame.setLayout(new BorderLayout());
 
-        DataPanel dataPanel = new DataPanel(model);
+        DataPanel dataPanel = new DataPanel();
         dataPanel.init();
 
         frame.add(dataPanel, BorderLayout.CENTER);

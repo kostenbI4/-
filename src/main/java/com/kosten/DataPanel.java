@@ -6,22 +6,44 @@ import java.awt.*;
 import java.awt.event.ComponentEvent;
 
 public class DataPanel extends JPanel implements Runnable {
-   TableModel model;
+    double massCount = (double) 0;
+    private double summMass(){
+        double summ = 0;
+        for (int i=0; i<tableModel.getRowCount(); i++){
+            String st = (String) tableModel.getValueAt(i,1);
+            summ += Double.parseDouble(st);
+        }
+        return summ;
+    }
+    double allMass;
 
-   private TableModel tableModel = new TableModel();
+    private Object[][]array=new String[][]{};
+    private Object[] columnsHeader = new String[]{"Имя","Масса", "Х", "У"};
+
+   private DefaultTableModel tableModel = new DefaultTableModel(array, columnsHeader);
    private JTable table= new JTable(tableModel);
+
+   Box rezContent = new Box(BoxLayout.Y_AXIS);
+   Label mass = new Label("Общая масса: "+massCount);
+   Label x = new Label("x: ");
+   Label y = new Label("y: ");
+
 
    private JButton addButton = new JButton("Добавить");
    private JButton deleteButton = new JButton("Удалить");
 
-   public DataPanel(TableModel model) {
-       this.model=model;
+   public DataPanel() {
+
        setLayout(new GridBagLayout());
 
-       new Thread(this).start();
+      // new Thread(this).start();
    }
 
    public void init(){
+       new Thread(this).start();
+       rezContent.add(mass);
+       rezContent.add(x);
+       rezContent.add(y);
        JScrollPane tableScrollPane = new JScrollPane(table);
        tableScrollPane.setPreferredSize(new Dimension(400, 400));
 
@@ -34,6 +56,7 @@ public class DataPanel extends JPanel implements Runnable {
        add(deleteButton, new GridBagConstraints(1, 1, 1, 1, 1, 1,
                GridBagConstraints.SOUTH, GridBagConstraints.HORIZONTAL,
                new Insets(1, 1, 1, 1), 0, 0));
+       add(rezContent);
 
 
 
@@ -46,7 +69,7 @@ public class DataPanel extends JPanel implements Runnable {
 
                }
            }
-           tableModel.addData(new String[]{" ", "0.0", "0.0", "0.0"});
+           tableModel.addRow(new String[]{" ", "1.0", "0.0", "0.0"});
 
        });
    }
@@ -55,14 +78,9 @@ public class DataPanel extends JPanel implements Runnable {
     public void run() {
         while (true){
             try {
-
-                int rowCount = table.getRowCount();
-                System.out.println(rowCount);
-                for (int i = 0; i < rowCount; i++) {
-                    for (int j = 0; j < 4; j++) {
-                        tableModel.setValueAt(table.getValueAt(i, j), i, j);
-                    }
-                }
+                allMass= summMass();
+                mass.setText("Общая масса: "+allMass);
+                System.out.println("Длинна массива: "+tableModel.getRowCount());
                 this.repaint();
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
