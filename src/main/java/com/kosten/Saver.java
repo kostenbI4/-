@@ -24,7 +24,7 @@ public class Saver {
                 if(i>0) text+="\n";
                 for (int j = 0; j < 4; j++) {
                     System.out.println(table.getValueAt(i,j));
-                    text+= table.getValueAt(i, j)+" ";
+                    text+= table.getValueAt(i, j)+"@#";
                 }
             }
 

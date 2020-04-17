@@ -24,7 +24,7 @@ public class Opener {
         try {
             Scanner sc = new Scanner(path);
             while (sc.hasNext()){
-                text = sc.nextLine().split(" ");
+                text = sc.nextLine().split("@#");
                 dtm.addRow(text);
             }
         } catch (FileNotFoundException e) {

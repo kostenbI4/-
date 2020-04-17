@@ -27,7 +27,7 @@ public class DataPanel extends JPanel implements Runnable {
             String st1 = (String) tableModel.getValueAt(i,2);
             mxS+=Double.parseDouble(st)*Double.parseDouble(st1);
         }
-        return mxS;
+        return mxS/massCount;
     }
     double myCount = (double) 0;
     double mySumm(){
@@ -37,7 +37,7 @@ public class DataPanel extends JPanel implements Runnable {
             String st1 = (String) tableModel.getValueAt(i,3);
             myS+=Double.parseDouble(st)*Double.parseDouble(st1);
         }
-        return myS;
+        return myS/massCount;
     }
 
 
@@ -110,7 +110,7 @@ public class DataPanel extends JPanel implements Runnable {
                    tableModel.setValueAt(table.getValueAt(i, j), i, j);
                }
            }
-           tableModel.addRow(new String[]{"-", "1.0", "0.0", "0.0"});
+           tableModel.addRow(new String[]{"-", "0.0", "0.0", "0.0"});
 
        });
 
@@ -131,6 +131,7 @@ public class DataPanel extends JPanel implements Runnable {
                int result = fileChooser.showSaveDialog(DataPanel.this);
                // Если файл выбран, то представим его в сообщении
                if (result == JFileChooser.APPROVE_OPTION ) {
+                   if(tableModel.getRowCount()==0){tableModel.addRow(new String[]{"-", "0.0", "0.0", "0.0"});}
                    new Saver(fileChooser.getSelectedFile(), table);
                    System.out.println(fileChooser.getSelectedFile());
                    JOptionPane.showMessageDialog(DataPanel.this,
@@ -168,10 +169,12 @@ public class DataPanel extends JPanel implements Runnable {
 
                 massCount= summMass();
                 mxCount=mxSumm();
+
                 myCount=mySumm();
+
                 mass.setText("Общая масса: "+massCount);
-                x.setText("x: "+mxCount);
-                y.setText("y: "+myCount);
+                x.setText("x: "+String.format("%.3f", mxCount));
+                y.setText("y: "+String.format("%.3f", myCount));
                // System.out.println("Длинна массива: "+tableModel.getRowCount());
                 this.repaint();
                 Thread.sleep(500);
