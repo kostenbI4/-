@@ -25,7 +25,7 @@ public class Opener {
             Scanner sc = new Scanner(path);
             while (sc.hasNext()){
                 text = sc.nextLine().split(" ");
-
+                dtm.addRow(text);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

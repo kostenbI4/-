@@ -150,7 +150,8 @@ public class DataPanel extends JPanel implements Runnable {
                // Если файл выбран, то представим его в сообщении
                if (result == JFileChooser.APPROVE_OPTION ) {
                    Opener op = new Opener(fileChooser.getSelectedFile(), tableModel);
-                   op.open();
+                   tableModel.setRowCount(0);
+                   table=op.open();
                    System.out.println(fileChooser.getSelectedFile());
                    JOptionPane.showMessageDialog(DataPanel.this,
                            "Файл '" + fileChooser.getSelectedFile() +

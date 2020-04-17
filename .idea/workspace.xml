@@ -4,6 +4,7 @@
     <list default="true" id="0b71fa7f-80d5-4cb7-aba1-0281f18d20aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kosten/DataPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kosten/DataPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kosten/Opener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kosten/Opener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +86,7 @@
       <workItem from="1586852685078" duration="12433000" />
       <workItem from="1586933366042" duration="24833000" />
       <workItem from="1587057898892" duration="801000" />
-      <workItem from="1587107492817" duration="14273000" />
+      <workItem from="1587107492817" duration="15056000" />
     </task>
     <servers />
   </component>
