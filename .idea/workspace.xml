@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b71fa7f-80d5-4cb7-aba1-0281f18d20aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kosten/DataPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kosten/DataPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kosten/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kosten/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson_1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -86,7 +83,9 @@
       <option name="presentableId" value="Default" />
       <updated>1586852679510</updated>
       <workItem from="1586852685078" duration="12433000" />
-      <workItem from="1586933366042" duration="22441000" />
+      <workItem from="1586933366042" duration="24833000" />
+      <workItem from="1587057898892" duration="801000" />
+      <workItem from="1587107492817" duration="14273000" />
     </task>
     <servers />
   </component>
@@ -98,7 +97,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
