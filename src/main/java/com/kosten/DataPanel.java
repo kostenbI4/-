@@ -83,6 +83,7 @@ public class DataPanel extends JPanel implements Runnable {
        mb.add(file);
        fileChooser = new JFileChooser();
 
+
        add(mb, new GridBagConstraints(0, 0, 1, 1, 1, 1,
                GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
                new Insets(1, 1, 1, 1), 0, 0));

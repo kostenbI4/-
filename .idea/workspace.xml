@@ -61,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.MCH.jar">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kosten.Main" />
       <module name="MCH" />
@@ -81,8 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.MCH.jar" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JAR Application.MCH.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +100,7 @@
       <workItem from="1586933366042" duration="24833000" />
       <workItem from="1587057898892" duration="801000" />
       <workItem from="1587107492817" duration="19525000" />
-      <workItem from="1587206496461" duration="3300000" />
+      <workItem from="1587206496461" duration="3874000" />
     </task>
     <servers />
   </component>
