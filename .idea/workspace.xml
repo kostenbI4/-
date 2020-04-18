@@ -7,17 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b71fa7f-80d5-4cb7-aba1-0281f18d20aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MCH_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kosten/DataPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kosten/DataPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kosten/Opener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kosten/Opener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kosten/Saver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kosten/Saver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MCH.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/DataPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/Opener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/Opener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kosten/Saver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kosten/Saver.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +43,11 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\JAVA\MCH\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,7 +99,8 @@
       <workItem from="1586852685078" duration="12433000" />
       <workItem from="1586933366042" duration="24833000" />
       <workItem from="1587057898892" duration="801000" />
-      <workItem from="1587107492817" duration="18603000" />
+      <workItem from="1587107492817" duration="19525000" />
+      <workItem from="1587206496461" duration="3300000" />
     </task>
     <servers />
   </component>

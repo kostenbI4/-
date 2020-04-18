@@ -5,17 +5,17 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentEvent;
 
 public class DataPanel extends JPanel implements Runnable {
+
 
     // Метод для подсчета общей массы
     double massCount = (double) 0;
     private double summMass(){
-        double summ = 0;
+        double summ = 0.0;
         for (int i=0; i<tableModel.getRowCount(); i++){
             String st = (String) tableModel.getValueAt(i,1);
-            summ += Double.parseDouble(st);
+            summ += Double.parseDouble(st.replaceAll(",", "."));
         }
         return summ;
     }
@@ -25,7 +25,7 @@ public class DataPanel extends JPanel implements Runnable {
         for (int i=0; i<tableModel.getRowCount(); i++){
             String st = (String) tableModel.getValueAt(i,1);
             String st1 = (String) tableModel.getValueAt(i,2);
-            mxS+=Double.parseDouble(st)*Double.parseDouble(st1);
+            mxS+=Double.parseDouble(st.replaceAll(",", "."))*Double.parseDouble(st1.replaceAll(",", "."));
         }
         return mxS/massCount;
     }
@@ -35,7 +35,7 @@ public class DataPanel extends JPanel implements Runnable {
         for (int i=0; i<tableModel.getRowCount(); i++){
             String st = (String) tableModel.getValueAt(i,1);
             String st1 = (String) tableModel.getValueAt(i,3);
-            myS+=Double.parseDouble(st)*Double.parseDouble(st1);
+            myS+=Double.parseDouble(st.replaceAll(",", "."))*Double.parseDouble(st1.replaceAll(",", "."));
         }
         return myS/massCount;
     }
